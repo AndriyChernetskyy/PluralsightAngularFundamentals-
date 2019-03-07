@@ -1,0 +1,10 @@
+<div>
+    <h1>Upcoming Angular Events</h1>
+    <hr/>
+    <events-thumbnail
+        #thumbnail 
+        (eventClick)="handleEvent($event)"
+        [event]="event1"></events-thumbnail>
+    <button class="btn" (click)="thumbnail.logFoo()">Log some foo</button>
+    <h3>{{thumbnail.somePropety}}</h3>
+</div>
